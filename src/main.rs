@@ -1,4 +1,5 @@
 use actix_web::{get, web, App, HttpResponse, HttpServer, Responder};
+use ytdlrs_lib::api::{client, downloader, fetch, search};
 
 #[get("/")]
 async fn hello_world() -> impl Responder {
