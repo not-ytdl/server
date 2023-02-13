@@ -1151,6 +1151,7 @@ name = "server"
 version = "0.1.0"
 dependencies = [
  "actix-web",
+ "serde",
  "ytdlrs_lib",
 ]
 

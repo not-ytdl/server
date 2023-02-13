@@ -8,4 +8,9 @@ edition = "2021"
 [dependencies]
 
 actix-web = "4"
+serde = { version = "1.0.152", features = ["derive"]}
 ytdlrs_lib = { git = "https://github.com/not-ytdl/ytdlrs_lib.git"}
+
+[lib]
+name = "server_lib"
+path = "lib/lib.rs"
