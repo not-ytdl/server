@@ -8,7 +8,7 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(|| 
         App::new().service(
             web::resource("/search")
-                // we use the guard to make sure that the query is present
+                // we use the guard to make sure that the query is present and it's a get to that route
                 .guard(guard::Get())
                 .route(web::get().to(Routes::search))
         ))
